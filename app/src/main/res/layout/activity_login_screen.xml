@@ -9,4 +9,62 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.itachi1706.jiraclient.LoginScreenActivity">
 
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editPassword"
+            android:hint="Password" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tilPassword"
+        android:layout_alignLeft="@+id/tilPassword"
+        android:layout_alignStart="@+id/tilPassword"
+        android:layout_alignRight="@+id/tilPassword"
+        android:layout_alignEnd="@+id/tilPassword">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editUsername"
+            android:hint="Username" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilServerURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tilUsername"
+        android:layout_alignLeft="@+id/tilUsername"
+        android:layout_alignStart="@+id/tilUsername"
+        android:layout_alignRight="@+id/tilUsername"
+        android:layout_alignEnd="@+id/tilUsername">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editServerURL"
+            android:inputType="textUri"
+            android:hint="Server URL" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/tilPassword"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
